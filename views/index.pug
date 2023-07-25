@@ -1,0 +1,23 @@
+doctype html
+html 
+  head
+  link(rel="stylesheet",href="/stylesheets/index.css")
+block content
+  h1= title
+  p Welcome to #{title}
+  p too hot to sleep
+  p 僕もねむい、あんまり得意じゃないから、まあいいか。
+  h1="TEST DB HERE."
+  p 色も変えたい
+  p DBを出荷日入力
+  p 出荷日、便、窓口をソートして表示
+  
+  form(method='post' action='')
+    ul 
+      li 
+        label(for="id-shipping-date") shipping date:
+        input(type="text" id="id-shipping-date")
+      li
+        label(for="id-shipping-no") shipping number: 
+        input(type="text" id="id-shipping-no")
+    input(type="submit" value="send")
